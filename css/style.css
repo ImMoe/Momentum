@@ -51,7 +51,7 @@ body {
 }
 
 .quote {
-    width: 40%;
+    width: 90%;
     text-align: center;
     position: fixed;
     bottom: 20;
@@ -68,9 +68,6 @@ body {
     }
     .main_focus h3 {
         font-size: 1.4rem; 
-    }
-    .focus {
-        margin-top: 1.3rem; 
     }
     .quote {
         font-size: 0.8rem;
