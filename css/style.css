@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(40deg, rgba(51, 51, 51, 0.212), rgba(0, 0, 0, 0.212)), 
+    url(../images/day/5.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.currentTime {
+    font-size: 11rem;
+    font-weight: bold;
+}
+
+.greet-user {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.main_focus h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.focus {
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    margin-top: 1.7rem;
+    padding: 0.8rem;
+    font-size: 1.7rem;
+    border: none;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    outline: none;
+}
+
+.quote {
+    position: fixed;
+    bottom: 20;
+    font-size: 1.3rem;
+    font-style: italic;
+}
