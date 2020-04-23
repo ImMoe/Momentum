@@ -34,7 +34,7 @@ class Moment {
 
         const random = Math.floor(Math.random() * this.imageCount + 1);
 
-        if (today.getHours() < 19) {
+        if (today.getHours() > 6 && today.getHours() < 19) {
             return `${dayImages}/${random}.jpg`;
         } else {
             return `${nightImages}/${random}.jpg`;
