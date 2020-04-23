@@ -17,9 +17,9 @@ class Moment {
     momentOfDay() {
         const { today } = this;
         const hour = today.getHours();
-        if (hour < 12 && hour > 6) {
+        if (hour > 6 && hour < 12) {
             return "Good morning";
-        } else if (hour < 19 && hour > 12) {
+        } else if (hour > 12 && hour < 19) {
             return "Good evening";
         } else {
             return "Good night";
