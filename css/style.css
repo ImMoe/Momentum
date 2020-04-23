@@ -69,8 +69,12 @@ body {
     .main_focus h3 {
         font-size: 1.4rem; 
     }
+    .focus {
+        margin-top: 1.3rem; 
+    }
     .quote {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        margin-top: 10px;
     }
 }
 
