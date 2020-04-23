@@ -40,7 +40,7 @@ body {
     background: transparent;
     color: #fff;
     width: 100%;
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
     padding: 0.8rem;
     font-size: 1.7rem;
     font-weight: bold;
@@ -52,8 +52,9 @@ body {
 
 .quote {
     width: 90%;
+    text-align: center;
     position: fixed;
-    bottom: 5px;
+    bottom: 1px;
     font-size: 1.3rem;
     font-style: italic;
 }
