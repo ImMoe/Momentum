@@ -7,6 +7,7 @@ class Moment {
         if (this.user == null) {
             const retrieveName = prompt("It seems to be your first time. Please enter your name");
             localStorage.setItem("moment_user", retrieveName);
+            this.user = localStorage.getItem("moment_user");
         }
     }
     getUser() {
@@ -14,7 +15,7 @@ class Moment {
     }
 
     momentOfDay() {
-        const today = new Date();
+        const { today } = this;
         const hour = today.getHours();
         if (hour < 12) {
             return "Good morning";
@@ -40,5 +41,10 @@ class Moment {
         }
 
     }
+
+    async generateQuote() {
+        return await fetch("https://type.fit/api/quotes").then(response => response.json());
+    }
+
 
 }
