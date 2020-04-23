@@ -30,7 +30,7 @@ class Moment {
         const { today } = this;
 
         const dayImages = location.href + "images/day";
-        const nightImages = location.href + "momentum/images/night";
+        const nightImages = location.href + "images/night";
 
         const random = Math.floor(Math.random() * this.imageCount + 1);
 
