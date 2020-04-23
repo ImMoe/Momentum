@@ -1,8 +1,11 @@
 
 const moment = new Moment();
 
+const body = document.body;
 const currentTime = document.querySelector(".currentTime");
 const greetUser = document.querySelector(".greet-user");
+
+body.style.background = `linear-gradient(40deg, rgba(51, 51, 51, 0.212), rgba(0, 0, 0, 0.212)), url(${moment.changebackground()})`;
 
 setInterval(function () {
     const today = new Date();

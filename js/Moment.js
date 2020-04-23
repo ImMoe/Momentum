@@ -1,5 +1,8 @@
 class Moment {
     user = localStorage.getItem("moment_user");
+    today = new Date();
+    imageCount = 5;
+
     constructor() {
         if (this.user == null) {
             const retrieveName = prompt("It seems to be your first time. Please enter your name");
@@ -21,4 +24,21 @@ class Moment {
             return "Good night";
         }
     }
+
+    changebackground() {
+        const { today } = this;
+
+        const dayImages = "/images/day";
+        const nightImages = "/images/night";
+
+        const random = Math.floor(Math.random() * this.imageCount + 1);
+
+        if (today.getHours() < 19) {
+            return `${dayImages}/${random}.jpg`;
+        } else {
+            return `${nightImages}/${random}.jpg`;
+        }
+
+    }
+
 }
