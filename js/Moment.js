@@ -42,6 +42,10 @@ class Moment {
 
     }
 
+    updateDailyTask(e) {
+        localStorage.setItem("moment_focus", e.target.value);
+    }
+
     async generateQuote() {
         return await fetch("https://type.fit/api/quotes").then(response => response.json());
     }
