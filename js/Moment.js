@@ -29,8 +29,8 @@ class Moment {
     changebackground() {
         const { today } = this;
 
-        const dayImages = "/images/day";
-        const nightImages = "/images/night";
+        const dayImages = "images/day";
+        const nightImages = "images/night";
 
         const random = Math.floor(Math.random() * this.imageCount + 1);
 
