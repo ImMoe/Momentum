@@ -14,7 +14,7 @@ setInterval(function () {
     currentTime.innerText = `${today.getHours() < 10 ? "0" + today.getHours() : today.getHours()}:${today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes()}`;
 }, 300);
 
-greetUser.innerText = `${moment.momentOfDay()}, ${moment.getUser()}`;
+greetUser.innerText = `${moment.momentOfDay()}!`;
 
 focus.value = localStorage.getItem("moment_focus");
 focus.addEventListener("keyup", moment.updateDailyTask);
