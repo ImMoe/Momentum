@@ -4,11 +4,11 @@ class Moment {
     imageCount = 5;
 
     constructor() {
-        if (this.user == null) {
-            const retrieveName = prompt("It seems to be your first time. Please enter your name");
-            localStorage.setItem("moment_user", retrieveName);
-            this.user = localStorage.getItem("moment_user");
-        }
+        // if (this.user == null) {
+        //     const retrieveName = prompt("It seems to be your first time. Please enter your name");
+        //     localStorage.setItem("moment_user", retrieveName);
+        //     this.user = localStorage.getItem("moment_user");
+        // }
     }
     getUser() {
         return this.user;
